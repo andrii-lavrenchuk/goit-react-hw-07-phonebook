@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
-import contactActions from '../../redux/contacts/contacts-actions';
+import contactOperations from '../../redux/contacts/contacts-operations';
 
 import s from './Form.module.css';
 import IconButton from '../IconButton/IconButton';
@@ -39,7 +39,7 @@ export default function Form() {
       setNumber('');
       return;
     }
-    dispatch(contactActions.addContact(name, number));
+    dispatch(contactOperations.addContact(name, number));
     setName('');
     setNumber('');
   };
