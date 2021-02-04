@@ -1,6 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import 'react-toastify/dist/ReactToastify.css';
 import Form from './Components/Form/Form';
 import ContactList from './Components/ContactList/ContactList';
@@ -10,6 +10,10 @@ import Container from './Components/Container/Container';
 import contactsOperations from './redux/contacts/contacts-operations';
 
 export default function App() {
+  // const loading = useSelector({
+  //   isLoading: state.contacts.loading,
+  // });
+
   const dispatch = useDispatch();
   const fetchContacts = () => dispatch(contactsOperations.fetchContacts());
 
