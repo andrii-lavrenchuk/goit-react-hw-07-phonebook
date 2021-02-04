@@ -1,14 +1,9 @@
 {
   "contacts": [
     {
-      "name": "andrii",
+      "name": "Test user",
       "number": "123-45-67",
       "id": 1
-    },
-    {
-      "name": "oksana",
-      "number": "123-45-67",
-      "id": 2
     }
   ]
 }
